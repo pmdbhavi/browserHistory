@@ -1,0 +1,75 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-right: 0px;
+  width: 80%;
+  justify-content: space-between;
+}
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.url {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.urlContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  margin: 20px;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.image {
+  margin: 10px;
+  height: 32px;
+  width: 32px;
+}
+
+.title {
+  margin: 10px;
+  color: #475569;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.domain {
+  color: #6697ff;
+  font-family: 'Roboto';
+}
+
+.button {
+  background-color: transparent;
+  cursor: pointer;
+  border-width: 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .url {
+    flex-direction: column;
+  }
+  .titleContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .domain {
+    margin: 0px;
+  }
+}
